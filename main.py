@@ -58,17 +58,19 @@ def save():
 # ---------------------------- FIND PASSWORD ------------------------------- #
 
 def find_password():
+    website = site_text_box.get()
     try:
         with open("my_passwords.json", "r") as data_file:
             data = json.load(data_file)
     except FileNotFoundError:
         messagebox.showerror(message="No Data File Found")
     else:
-        website = site_text_box.get()
         if website in data:
-            messagebox.showinfo(message=f"Website: {website}\nPassword: {data[website]['password']}")
+            email = data[website]['email']
+            password = data[website]['password']
+            messagebox.showinfo(message=f"Website: {website}\nEmail: {email}\nPassword: {password}")
         else:
-            messagebox.showerror(message="No details for the website exists.")
+            messagebox.showerror(message=f"No details for {website} exists.")
 
 # ---------------------------- UI SETUP ------------------------------- #
 
