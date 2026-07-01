@@ -9,3 +9,7 @@ __pycache__/
 .vscode/
 
 .env/
+
+my_passwords.txt
+
+my_passwords.json
