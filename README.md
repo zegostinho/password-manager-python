@@ -13,3 +13,4 @@ Project developed with Python as part of my learning.
 - Python
 
 ## Screenshots
+![screenshot_ui.png](assets/screenshot_ui.png)
