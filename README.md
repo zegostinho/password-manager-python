@@ -11,3 +11,5 @@ Project developed with Python as part of my learning.
 ## Technology
 
 - Python
+
+## Screenshots
